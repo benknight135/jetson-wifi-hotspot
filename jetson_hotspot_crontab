@@ -1,0 +1,1 @@
+@reboot python3 /usr/local/bin/jetson_hotspot/startup_hotspot.py

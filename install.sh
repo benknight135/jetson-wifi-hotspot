@@ -41,3 +41,10 @@ xhost +
 
 # create wifi hotspot
 sudo create_ap wlan0 eth0 '$ssid' '$pass' --freq-band 2.4 --no-virt -w 2
+
+# copy files to known directory for use in crontab
+sudo mkdir /usr/local/bin/jetson_hotspot
+sudo cp hotspot.config /usr/local/bin/jetson_hotspot/hotspot.config
+sudo cp startup_hotspot.py /usr/local/bin/jetson_hotspot/startup_hotspot.py
+# copy crontab config to crontab directory to auto start hotspot on boot
+sudo cp jetson_hotspot_crontab /etc/cron.d/jetson_hotspot_crontab
