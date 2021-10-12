@@ -18,6 +18,6 @@ while True:
 
     if ("Realtek RTL8188CUS" in str(result.stdout)):
         time.sleep(3)
-        os.system("sudo create_ap wlan0 eth0 '"+ssid+"' '"+pswd+"' --freq-band 2.4 --no-virt -w 2")
+        os.system("sudo create_ap wlan0 eth0 '"+ssid+"' '"+pswd+"' --freq-band 2.4")
 
         break
