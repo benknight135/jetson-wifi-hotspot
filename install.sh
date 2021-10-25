@@ -24,7 +24,7 @@ while [ $# -gt 0 ]; do
 done
 
 # install dependencies
-sudo apt install -y libgtk-3-dev build-essential gcc g++ pkg-config make hostapd
+sudo apt install -y libgtk-3-dev build-essential gcc g++ pkg-config make hostapd libqrencode-dev libpng-dev
 
 # clone linux-wifi-hotspot repo
 git clone https://github.com/lakinduakash/linux-wifi-hotspot
